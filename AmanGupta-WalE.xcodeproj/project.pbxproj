@@ -15,6 +15,12 @@
 		1F38357D2802AC3A003A9CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F38357B2802AC3A003A9CD8 /* LaunchScreen.storyboard */; };
 		1F3835882802AC3A003A9CD8 /* AmanGupta_WalETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835872802AC3A003A9CD8 /* AmanGupta_WalETests.swift */; };
 		1F3835932802AC3A003A9CD8 /* AmanGupta_WalEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835922802AC3A003A9CD8 /* AmanGupta_WalEUITests.swift */; };
+		1F3835A62802ADCA003A9CD8 /* AstronomyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835A52802ADCA003A9CD8 /* AstronomyPictureViewController.swift */; };
+		1F3835A82802AE36003A9CD8 /* AstronomyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835A72802AE36003A9CD8 /* AstronomyPictureViewModel.swift */; };
+		1F3835AA2802AF03003A9CD8 /* AstronomyPictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835A92802AF03003A9CD8 /* AstronomyPictureModel.swift */; };
+		1F3835AD2802B002003A9CD8 /* NetworkingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835AC2802B002003A9CD8 /* NetworkingHandler.swift */; };
+		1F3835AF2802BA28003A9CD8 /* AstronomPictureServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835AE2802BA28003A9CD8 /* AstronomPictureServiceManager.swift */; };
+		1F3835B12802F35D003A9CD8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3835B02802F35D003A9CD8 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		1F38358E2802AC3A003A9CD8 /* AmanGupta-WalEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AmanGupta-WalEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3835922802AC3A003A9CD8 /* AmanGupta_WalEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmanGupta_WalEUITests.swift; sourceTree = "<group>"; };
 		1F3835942802AC3A003A9CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3835A52802ADCA003A9CD8 /* AstronomyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewController.swift; sourceTree = "<group>"; };
+		1F3835A72802AE36003A9CD8 /* AstronomyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewModel.swift; sourceTree = "<group>"; };
+		1F3835A92802AF03003A9CD8 /* AstronomyPictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureModel.swift; sourceTree = "<group>"; };
+		1F3835AC2802B002003A9CD8 /* NetworkingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHandler.swift; sourceTree = "<group>"; };
+		1F3835AE2802BA28003A9CD8 /* AstronomPictureServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomPictureServiceManager.swift; sourceTree = "<group>"; };
+		1F3835B02802F35D003A9CD8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		1F38356F2802AC39003A9CD8 /* AmanGupta-WalE */ = {
 			isa = PBXGroup;
 			children = (
+				1F3835AB2802AFDD003A9CD8 /* NetworkingHandler */,
+				1F3835A02802AD4B003A9CD8 /* Module */,
 				1F3835702802AC39003A9CD8 /* AppDelegate.swift */,
 				1F3835722802AC39003A9CD8 /* SceneDelegate.swift */,
 				1F3835742802AC39003A9CD8 /* ViewController.swift */,
@@ -126,6 +140,66 @@
 				1F3835942802AC3A003A9CD8 /* Info.plist */,
 			);
 			path = "AmanGupta-WalEUITests";
+			sourceTree = "<group>";
+		};
+		1F3835A02802AD4B003A9CD8 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835B2280301D6003A9CD8 /* BaseViewController */,
+				1F3835A12802AD52003A9CD8 /* AstronomyPicture */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1F3835A12802AD52003A9CD8 /* AstronomyPicture */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835A42802ADAD003A9CD8 /* Model */,
+				1F3835A32802ADA8003A9CD8 /* ViewModel */,
+				1F3835A22802ADA3003A9CD8 /* Controller */,
+			);
+			path = AstronomyPicture;
+			sourceTree = "<group>";
+		};
+		1F3835A22802ADA3003A9CD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835A52802ADCA003A9CD8 /* AstronomyPictureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F3835A32802ADA8003A9CD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835A72802AE36003A9CD8 /* AstronomyPictureViewModel.swift */,
+				1F3835AE2802BA28003A9CD8 /* AstronomPictureServiceManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F3835A42802ADAD003A9CD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835A92802AF03003A9CD8 /* AstronomyPictureModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F3835AB2802AFDD003A9CD8 /* NetworkingHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835AC2802B002003A9CD8 /* NetworkingHandler.swift */,
+			);
+			path = NetworkingHandler;
+			sourceTree = "<group>";
+		};
+		1F3835B2280301D6003A9CD8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F3835B02802F35D003A9CD8 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3835752802AC39003A9CD8 /* ViewController.swift in Sources */,
+				1F3835AF2802BA28003A9CD8 /* AstronomPictureServiceManager.swift in Sources */,
+				1F3835AD2802B002003A9CD8 /* NetworkingHandler.swift in Sources */,
 				1F3835712802AC39003A9CD8 /* AppDelegate.swift in Sources */,
+				1F3835A62802ADCA003A9CD8 /* AstronomyPictureViewController.swift in Sources */,
+				1F3835B12802F35D003A9CD8 /* BaseViewController.swift in Sources */,
 				1F3835732802AC39003A9CD8 /* SceneDelegate.swift in Sources */,
+				1F3835A82802AE36003A9CD8 /* AstronomyPictureViewModel.swift in Sources */,
+				1F3835AA2802AF03003A9CD8 /* AstronomyPictureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
